@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="UTF-8">
-		<title>Archivos Markdown</title>
+	<meta charset="UTF-8">
+	<title>Navegación por archivos Markdown</title>
+	<script>
+	function recitar() {
+    	const url = 'http://localhost:3000/recitar'
+    	fetch(url).then(
+        response => response.json()
+    	).then(
+        data => {
+        document.querySelector("#poema").innerHTML = data.text
+        }
+    	)
+    	}
+    	</script>	
 	</head>
 	<body>
-		<h1>Navegación sobre archivos Markdown</h1>
-		<ul>
-			<li><a href="">Archivos Markdown disponibles</a></li>
-			<li><a href="">Ver contenido</a></li> 	
-			<li><a href="">Crear Archivo Markdown</a></li> 	
-		</ul>
+		<h1>Hola mundoooooooooooooo</h1>
+		<button onclick="recitar()">X</button>
+		<p id="#poema"><p>	
 	</body>
 </html>
 
