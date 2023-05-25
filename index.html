@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<title>Archivos Markdown</title>
-	</head>
-	<body>
-		<h1>Navegación sobre archivos Markdown</h1>
-		<ul>
-			<li><a href="">Archivos Markdown disponibles</a></li>
-			<li><a href="">Ver contenido</a></li> 	
-			<li><a href="">Crear Archivo Markdown</a></li> 	
-		</ul>
-	</body>
-</html>
+<html>
+<head>
+  <title>Aplicación de Archivos Markdown</title>
+</head>
+<body>
+  <h1>Archivos Markdown</h1>
 
+  <div id="file-list">
+    <h2>Archivos disponibles:</h2>
+    <ul id="file-list-items"></ul>
+  </div>
+
+  <div id="file-content">
+    <h2>Contenido:</h2>
+    <div id="file-content-html"></div>
+  </div>
+
+  <div id="file-creation">
+    <h2>Crear nuevo archivo:</h2>
+    <input type="text" id="file-name-input" placeholder="Nombre del archivo"><br>
+    <textarea id="file-content-input" placeholder="Contenido del archivo" rows="10" cols="50"></textarea><br>
+    <button id="create-file-button">Crear archivo</button><br>
+  </div>
+  <!-- facilita la manipulación y interacción con los elementos -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
